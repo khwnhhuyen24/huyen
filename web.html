@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giới thiệu bản thân</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Thêm Font Awesome cho icon đẹp -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fceff9, #f5e3ff, #fdf2f8);
+      margin: 0;
+      padding: 60px;
+      animation: backgroundMove 10s infinite alternate;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      transition: transform 0.3s;
+    }
+
+    .container:hover {
+      transform: scale(1.01);
+    }
+
+    .info {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      color: #d6336c;
+      margin: 5px 0 20px;
+      font-size: 40px;
+    }
+
+    .button {
+      background: linear-gradient(to right, #ff6a9f, #ff94c2);
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 5px 10px rgba(255, 105, 135, 0.3);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: linear-gradient(to right, #ff85b1, #ffa8d4);
+      transform: scale(1.05);
+    }
+
+    .contact {
+      line-height: 1.8;
+      font-size: 15px;
+      background: #fff0f5;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(255, 174, 204, 0.2);
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .avatar img {
+      width: 380px;
+      height: auto;
+      border-radius: 20px;
+      border: 5px solid #f78fb3;
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 20px rgba(247, 143, 179, 0.3);
+    }
+
+    .avatar img:hover {
+      transform: scale(1.05);
+    }
+
+    .socials {
+      margin-top: 20px;
+      font-size: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .socials i {
+      color: #d6336c;
+      transition: transform 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .socials i:hover {
+      color: #000;
+      transform: scale(1.2);
+    }
+
+    .greeting {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Thông tin -->
+    <div class="info">
+      <p class="greeting">👋 Xin chào, tôi là</p>
+      <h1><strong>Vũ Thị Khánh Huyền</strong></h1>
+
+      <p>🖥️ Sinh viên ngành Công nghệ thông tin</p>
+      <p>🌙 & Tôi thích ngủ</p>
+
+      <div style="margin: 20px 0;">
+        <button class="button"><i class="fas fa-envelope"></i> Liên hệ với tôi</button>
+      </div>
+
+      <div class="contact">
+        <p><strong>📧 Email:</strong> vukhanhhuyen210624@gmail.com</p>
+        <p><strong>📞 SĐT:</strong> 0948462196</p>
+        <p><strong>🏠 Địa chỉ:</strong> 11 Triều Khúc, Hà Nội</p>
+        <p><strong>🆔 Mã SV:</strong> 12345678</p>
+        <p><strong>📘 Lớp:</strong> 73DCTT22</p>
+        <p><strong>🏫 Trường:</strong> Đại học Công nghệ GTVT</p>
+      </div>
+
+      <!-- Mạng xã hội -->
+      <div class="socials">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
+
+    <!-- Ảnh đại diện -->
+    <div class="avatar">
+      <img src="istockphoto-508030340-612x612.jpg" alt="Ảnh đại diện">
+    </div>
+  </div>
+
+</body>
+</html>
