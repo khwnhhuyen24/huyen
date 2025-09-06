@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="135dp"
+    android:layout_height="33dp"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical"
+    android:layout_marginTop="11dp"
+    android:padding="1dp"
+    android:layout_marginStart="5dp"
+    android:background="@drawable/ic_home">
+
+    <ImageButton
+        android:id="@+id/decrease"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_decrease"
+        android:background="#FFFFFF" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="30dp"
+        android:background="#C6CFD2"/>
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text=""/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="85dp"
+        android:background="#C6CFD2"/>
+
+    <ImageButton
+        android:id="@+id/increase"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="87dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_increase" />
+
+</FrameLayout>
